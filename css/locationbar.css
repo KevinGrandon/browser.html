@@ -63,6 +63,7 @@
 }
 
 .backbutton,
+.forwardbutton,
 .reloadbutton,
 .stopbutton {
   display: block;
@@ -76,6 +77,7 @@
 }
 
 .backbutton::after,
+.forwardbutton::after,
 .reloadbutton::after,
 .stopbutton::after {
   pointer-events: none;
@@ -88,6 +90,7 @@
   transform: translateY(var(--hwd-pixel)); /* meh */
 }
 
+.forwardbutton::after {   content: "\f053" }
 .backbutton::after {   content: "\f053" }
 .reloadbutton::after { content: "\f01e" }
 .stopbutton::after {   content: "\f00d" }
